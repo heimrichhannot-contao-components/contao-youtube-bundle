@@ -1,7 +1,5 @@
-import {utilsBundle} from '@hundh/contao-utils-bundle';
-import {alertify} from 'alertifyjs';
-
-window.alertify = alertify;
+import '@hundh/contao-utils-bundle';
+import 'alertifyjs';
 
 class YouTubeBundle {
     static getConfig() {
@@ -53,7 +51,7 @@ class YouTubeBundle {
                 return false;
             }
 
-            let dialog = window.alertify.confirm(
+            let dialog = alertify.confirm(
                 '&nbsp;',
                 el.getAttribute('data-privacy-html').replace(/\\"/g, '"'),
                 function() {
