@@ -1,5 +1,5 @@
 import '@hundh/contao-utils-bundle';
-import 'alertifyjs';
+import alertify from 'alertifyjs';
 
 class YouTubeBundle {
     static getConfig() {
